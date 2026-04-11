@@ -90,3 +90,4 @@ import seaborn as sns
 df=pd.read_csv("D://OneDrive//Documents//Telco-Customer-Churn.csv")
 df
 ```
+![An Image](https://github.com/Dataprofessional2/Customer_Churn_Project_DA/blob/main/Importing_Data.png) 
