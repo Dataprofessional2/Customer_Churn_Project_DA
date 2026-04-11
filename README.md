@@ -61,3 +61,17 @@ This dataset allows us to analyze customer behavior, identify patterns related t
 
 The primary objective of this project is to predict whether a customer is likely to churn based on features such as demographic information, service usage, contract type, and billing behavior. By identifying patterns and relationships within the data, we aim to help businesses detect high-risk customers early and implement effective retention strategies to reduce customer loss and improve overall customer satisfaction.
 
+
+## Data Cleaning & Preparation
+
+#### Data Loading and Inspection
+
+- The first step involves loading the dataset using Python libraries such as pandas and inspecting its structure. We check the shape of the dataset, column types, and summary statistics to understand the data and identify areas that require cleaning.
+
+#### Handling Missing Values
+
+- Missing data is common in real-world datasets. We explore missing values across features such as TotalCharges, tenure, or service-related variables and decide on appropriate techniques such as imputation or row removal based on their impact on the analysis.
+
+#### Data Cleaning and Formatting
+
+- We ensure consistency in the dataset by converting data types, handling categorical variables, and removing duplicate records if necessary. This step prepares the data for efficient analysis and modeling.
