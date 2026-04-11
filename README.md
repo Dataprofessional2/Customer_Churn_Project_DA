@@ -84,7 +84,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
 ```
-![An Image](https://github.com/Dataprofessional2/Adv_Project/blob/main/Screenshot%202025-09-18%20133700.png)
+![An Image](https://github.com/Dataprofessional2/Customer_Churn_Project_DA/blob/main/Importing_Libraries.png)  
 ```python
 #Importing Churn DataSet
 df=pd.read_csv("D://OneDrive//Documents//Telco-Customer-Churn.csv")
