@@ -50,6 +50,6 @@ Key features in the dataset include:
 - Contract: type of customer contract (monthly, yearly, etc.)
 - MonthlyCharges: amount charged to the customer each month
 - TotalCharges: total amount charged to the customer
-- Churn: indicates whether the customer left the service (Yes/No)
+- Churn: indicates whether the customer left the service (Yes/No) and more
 
 This dataset allows us to analyze customer behavior, identify patterns related to churn, and build predictive models to support customer retention strategies.
