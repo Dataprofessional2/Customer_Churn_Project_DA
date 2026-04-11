@@ -34,3 +34,22 @@ This repository contains projects and case studies based on real-world business 
 
 In this project, we explore how businesses can identify customers who are likely to leave their service and take proactive steps to improve customer retention. Using a customer churn dataset, we analyze patterns in customer behavior, service usage, and billing information. The goal is to build a predictive model that helps organizations detect high-risk customers by leveraging available customer attributes and usage trends.
 
+
+### Overview of Customer Churn Dataset
+
+The dataset includes comprehensive information on customers, such as demographic details, services subscribed to, billing information, and account history. It provides insights into customer behavior and service usage patterns that influence customer retention and churn.
+
+Key features in the dataset include:
+
+- customerID: unique identifier for each customer
+- gender: customer gender
+- SeniorCitizen: indicates whether the customer is a senior citizen
+- tenure: number of months the customer has stayed with the company
+- PhoneService: whether the customer has phone service
+- InternetService: type of internet service subscribed
+- Contract: type of customer contract (monthly, yearly, etc.)
+- MonthlyCharges: amount charged to the customer each month
+- TotalCharges: total amount charged to the customer
+- Churn: indicates whether the customer left the service (Yes/No)
+
+This dataset allows us to analyze customer behavior, identify patterns related to churn, and build predictive models to support customer retention strategies.
