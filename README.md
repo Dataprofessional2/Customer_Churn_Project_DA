@@ -75,3 +75,17 @@ The primary objective of this project is to predict whether a customer is likely
 #### Data Cleaning and Formatting
 
 - We ensure consistency in the dataset by converting data types, handling categorical variables, and removing duplicate records if necessary. This step prepares the data for efficient analysis and modeling.
+
+
+```python
+# Importing Libraries
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as sns
+```
+```python
+#Importing Churn DataSet
+df=pd.read_csv("D://OneDrive//Documents//Telco-Customer-Churn.csv")
+df
+```
