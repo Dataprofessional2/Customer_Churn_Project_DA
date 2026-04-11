@@ -53,3 +53,11 @@ Key features in the dataset include:
 - Churn: indicates whether the customer left the service (Yes/No) and more
 
 This dataset allows us to analyze customer behavior, identify patterns related to churn, and build predictive models to support customer retention strategies.
+
+
+
+
+## Business Objective
+
+The primary objective of this project is to predict whether a customer is likely to churn based on features such as demographic information, service usage, contract type, and billing behavior. By identifying patterns and relationships within the data, we aim to help businesses detect high-risk customers early and implement effective retention strategies to reduce customer loss and improve overall customer satisfaction.
+
