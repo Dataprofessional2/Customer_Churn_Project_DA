@@ -27,3 +27,10 @@ This repository contains projects and case studies based on real-world business 
 - Customer Retention Strategies
 - Identifying High-Risk Customers
 - Conclusion
+
+## Project Overview: Customer Churn Prediction
+
+### Introduction
+
+In this project, we explore how businesses can identify customers who are likely to leave their service and take proactive steps to improve customer retention. Using a customer churn dataset, we analyze patterns in customer behavior, service usage, and billing information. The goal is to build a predictive model that helps organizations detect high-risk customers by leveraging available customer attributes and usage trends.
+
