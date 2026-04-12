@@ -91,5 +91,15 @@ df=pd.read_csv("D://OneDrive//Documents//Telco-Customer-Churn.csv")
 df
 ```
 ![An Image](https://github.com/Dataprofessional2/Customer_Churn_Project_DA/blob/main/Importing_Data.png) 
+
+```python
+#checking data
+df.head()
+```
 ![An Image](https://github.com/Dataprofessional2/Customer_Churn_Project_DA/blob/main/top_records.png)
-![An Image](https://github.com/Dataprofessional2/Customer_Churn_Project_DA/blob/main/Importing_Data.png) 
+
+```python
+df.shape
+df.info()
+```
+![An Image](https://github.com/Dataprofessional2/Customer_Churn_Project_DA/blob/main/df_inspection.png)
