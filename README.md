@@ -145,10 +145,25 @@ df.isnull().sum()
 ```
 ![An Image](https://github.com/Dataprofessional2/Customer_Churn_Project_DA/blob/main/Data_Cleanig.png)
 
+```python
+#Check Unique or Inconsistent Values (Categorical Columns)
+for col in df1.select_dtypes(include='object').columns:
+    print(col)
+    print(df1[col].unique())
+    print("------")
+```
+![An Image](https://github.com/Dataprofessional2/Customer_Churn_Project_DA/blob/main/dc2.png)
 
+```python
+df1.describe()
+```
+![An Image](https://github.com/Dataprofessional2/Customer_Churn_Project_DA/blob/main/df3.png)
+```python
 
-
-https://github.com/Dataprofessional2/Customer_Churn_Project_DA/blob/main/dc2.png
-https://github.com/Dataprofessional2/Customer_Churn_Project_DA/blob/main/df3.png
+```
 https://github.com/Dataprofessional2/Customer_Churn_Project_DA/blob/main/df4.png
+
+```python
+
+```
 https://github.com/Dataprofessional2/Customer_Churn_Project_DA/blob/main/dc5.png
