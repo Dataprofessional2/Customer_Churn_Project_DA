@@ -104,3 +104,40 @@ df.shape
 df.info()
 ```
 ![An Image](https://github.com/Dataprofessional2/Customer_Churn_Project_DA/blob/main/df_inspection.png)
+
+
+```python
+# Selecting relevant columns into a new dataframe instead of deleting columns
+# to preserve the original dataset. This ensures data integrity and allows us
+# to revisit the raw data if needed during later stages of analysis.
+
+selected_columns = [
+    'gender',
+    'SeniorCitizen',
+    'Partner',
+    'Dependents',
+    'tenure',
+    'PhoneService',
+    'MultipleLines',
+    'InternetService',
+    'OnlineSecurity',
+    'OnlineBackup',
+    'DeviceProtection',
+    'TechSupport',
+    'StreamingTV',
+    'StreamingMovies',
+    'Contract',
+    'PaperlessBilling',
+    'PaymentMethod',
+    'MonthlyCharges',
+    'TotalCharges',
+    'Churn'
+]
+df1 = df[selected_columns]
+df1
+```
+![An Image](https://github.com/Dataprofessional2/Customer_Churn_Project_DA/blob/main/selecting_columns.png)
+![An Image](https://github.com/Dataprofessional2/Customer_Churn_Project_DA/blob/main/img.png)
+```python
+
+```
