@@ -159,11 +159,34 @@ df1.describe()
 ```
 ![An Image](https://github.com/Dataprofessional2/Customer_Churn_Project_DA/blob/main/df3.png)
 ```python
+#Data Cleaning
+# Replace blank spaces with NaN
+df1['TotalCharges'] = df1['TotalCharges'].replace([' ', ''], pd.NA)
 
+# Convert TotalCharges to numeric
+df1['TotalCharges'] = pd.to_numeric(df1['TotalCharges'], errors='coerce')
+
+# Check missing values again
+df1.isnull().sum()
+
+# Remove rows with missing values
+
+df1 = df1.dropna()
+# Check null values
+df1.isnull().sum()
+
+# Check dataset shape
+df1.shape
+
+# Check data types
+df1.dtypes
+
+# Summary statistics
+df1.describe()
 ```
-https://github.com/Dataprofessional2/Customer_Churn_Project_DA/blob/main/df4.png
+![An Image](https://github.com/Dataprofessional2/Customer_Churn_Project_DA/blob/main/df4.png)
+![An Image](https://github.com/Dataprofessional2/Customer_Churn_Project_DA/blob/main/dc5.png)
 
 ```python
 
 ```
-https://github.com/Dataprofessional2/Customer_Churn_Project_DA/blob/main/dc5.png
