@@ -99,6 +99,7 @@ df.head()
 ![An Image](https://github.com/Dataprofessional2/Customer_Churn_Project_DA/blob/main/top_records.png)
 
 ```python
+#Basic column view
 df.shape
 df.info()
 ```
