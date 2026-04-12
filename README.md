@@ -139,5 +139,16 @@ df1
 ![An Image](https://github.com/Dataprofessional2/Customer_Churn_Project_DA/blob/main/selecting_columns.png)
 ![An Image](https://github.com/Dataprofessional2/Customer_Churn_Project_DA/blob/main/img.png)
 ```python
-
+#Data Cleaning
+#Checking for null values
+df.isnull().sum()
 ```
+![An Image](https://github.com/Dataprofessional2/Customer_Churn_Project_DA/blob/main/Data_Cleanig.png)
+
+
+
+
+https://github.com/Dataprofessional2/Customer_Churn_Project_DA/blob/main/dc2.png
+https://github.com/Dataprofessional2/Customer_Churn_Project_DA/blob/main/df3.png
+https://github.com/Dataprofessional2/Customer_Churn_Project_DA/blob/main/df4.png
+https://github.com/Dataprofessional2/Customer_Churn_Project_DA/blob/main/dc5.png
