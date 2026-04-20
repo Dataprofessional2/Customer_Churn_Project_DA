@@ -1,4 +1,4 @@
-# Customer Churn Prediction
+<img width="1492" height="190" alt="image" src="https://github.com/user-attachments/assets/add15ff2-450f-423c-b5cf-5bfbc6eece88" /># Customer Churn Prediction
 
 This repository contains projects and case studies based on real-world business problems. It includes data cleaning, analysis, visualization, and insights using different tools. The goal is to apply real-world data analytics techniques to solve business problems and derive actionable insights.
 
@@ -208,20 +208,22 @@ plt.show()
 ```
 ![An Image](https://github.com/Dataprofessional2/Customer_Churn_Project_DA/blob/main/churn_plot.png)
 
-
-
+```python
+# Churn by gender
+df1.groupby(['gender', 'Churn']).size()
+```
+![An Image](https://github.com/Dataprofessional2/Customer_Churn_Project_DA/blob/main/gender_churn.png)
 
 ```python
+#gender by plot
+sns.countplot(x='gender', hue='Churn', data=df1)
 
+plt.title('Customer Churn Count by Gender')
+plt.xlabel('Gender')
+plt.ylabel('Number of Customers')
+plt.show()
 ```
-
-
-
-
-
-```python
-
-```
+![An Image](https://github.com/Dataprofessional2/Customer_Churn_Project_DA/blob/main/gender_plot.png)
 
 
 
