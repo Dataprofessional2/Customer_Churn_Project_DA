@@ -1,4 +1,4 @@
-<img width="1492" height="190" alt="image" src="https://github.com/user-attachments/assets/add15ff2-450f-423c-b5cf-5bfbc6eece88" /># Customer Churn Prediction
+# Customer Churn Prediction
 
 This repository contains projects and case studies based on real-world business problems. It includes data cleaning, analysis, visualization, and insights using different tools. The goal is to apply real-world data analytics techniques to solve business problems and derive actionable insights.
 
