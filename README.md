@@ -187,6 +187,54 @@ df1.describe()
 ![An Image](https://github.com/Dataprofessional2/Customer_Churn_Project_DA/blob/main/df4.png)
 ![An Image](https://github.com/Dataprofessional2/Customer_Churn_Project_DA/blob/main/dc5.png)
 
+
+```python
+df1['Churn'].value_counts()
+```
+![An Image](https://github.com/Dataprofessional2/Customer_Churn_Project_DA/blob/main/churn_count.png)
+
+
+```python
+# Basic Churn Plot
+sns.countplot(x='Churn', data=df1)
+
+plt.title('Customer Churn Distribution')
+plt.xlabel('Churn')
+plt.ylabel('Number of Customers')
+
+plt.show()
+```
+![An Image](https://github.com/Dataprofessional2/Customer_Churn_Project_DA/blob/main/churn_plot.png)
+
+
+
+
+```python
+
+```
+
+
+
+
+
+```python
+
+```
+
+
+
+
+
+
+```python
+
+```
+
+
+
+
+
+
 ```python
 
 ```
