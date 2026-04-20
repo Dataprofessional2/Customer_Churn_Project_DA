@@ -188,6 +188,8 @@ df1.describe()
 ![An Image](https://github.com/Dataprofessional2/Customer_Churn_Project_DA/blob/main/dc5.png)
 
 
+
+## Exploratory Data Analysis
 ```python
 df1['Churn'].value_counts()
 ```
