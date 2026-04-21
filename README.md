@@ -231,12 +231,28 @@ df1.groupby('Churn')['MonthlyCharges'].describe()df1.groupby('Churn')['MonthlyCh
 ```
 ![An Image](https://github.com/Dataprofessional2/Customer_Churn_Project_DA/blob/main/desc_churn.png)
 
-
-
-
-
-
+```python
+#monthly charges for churn 
+df1.groupby('Churn')['MonthlyCharges'].mean()
+```
+![An Image](https://github.com/Dataprofessional2/Customer_Churn_Project_DA/blob/main/monthly_price_churn.png)
 ```python
 
 ```
-![An Image](https://github.com/Dataprofessional2/Customer_Churn_Project_DA/blob/main/monthly_price_churn.png)
+```python
+
+````python
+
+``````python
+
+``````python
+
+``````python
+
+``````python
+
+``````python
+
+``````python
+
+`````
