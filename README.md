@@ -215,7 +215,7 @@ df1.groupby(['gender', 'Churn']).size()
 ![An Image](https://github.com/Dataprofessional2/Customer_Churn_Project_DA/blob/main/gender_churn.png)
 
 ```python
-#gender by plot
+#gender churn by plot
 sns.countplot(x='gender', hue='Churn', data=df1)
 
 plt.title('Customer Churn Count by Gender')
@@ -225,6 +225,12 @@ plt.show()
 ```
 ![An Image](https://github.com/Dataprofessional2/Customer_Churn_Project_DA/blob/main/gender_plot.png)
 
+```python
+# Generate summary statistics of MonthlyCharges grouped by churn status
+df1.groupby('Churn')['MonthlyCharges'].describe()df1.groupby('Churn')['MonthlyCharges'].describe()
+```
+![An Image](https://github.com/Dataprofessional2/Customer_Churn_Project_DA/blob/main/desc_churn.png)
+
 
 
 
@@ -233,12 +239,4 @@ plt.show()
 ```python
 
 ```
-
-
-
-
-
-
-```python
-
-```
+![An Image](https://github.com/Dataprofessional2/Customer_Churn_Project_DA/blob/main/gender_plot.png)
