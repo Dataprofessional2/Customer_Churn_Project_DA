@@ -239,4 +239,4 @@ df1.groupby('Churn')['MonthlyCharges'].describe()df1.groupby('Churn')['MonthlyCh
 ```python
 
 ```
-![An Image](https://github.com/Dataprofessional2/Customer_Churn_Project_DA/blob/main/gender_plot.png)
+![An Image](https://github.com/Dataprofessional2/Customer_Churn_Project_DA/blob/main/monthly_price_churn.png)
