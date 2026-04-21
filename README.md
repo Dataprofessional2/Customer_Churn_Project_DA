@@ -234,25 +234,21 @@ df1.groupby('Churn')['MonthlyCharges'].describe()df1.groupby('Churn')['MonthlyCh
 ```python
 #monthly charges for churn 
 df1.groupby('Churn')['MonthlyCharges'].mean()
+#median price for churn and not churn
+df1.groupby('Churn')['MonthlyCharges'].median()
 ```
 ![An Image](https://github.com/Dataprofessional2/Customer_Churn_Project_DA/blob/main/monthly_price_churn.png)
 ```python
+#monthly price boxplot
+sns.boxplot(x='Churn', y='MonthlyCharges', data=df1)
 
+plt.title('Monthly Charges by Churn Status')
+plt.xlabel('Churn')
+plt.ylabel('Monthly Charges')
+
+plt.show()
 ```
+![An Image](https://github.com/Dataprofessional2/Customer_Churn_Project_DA/blob/main/boxplot.png)
 ```python
 
-````python
-
-``````python
-
-``````python
-
-``````python
-
-``````python
-
-``````python
-
-``````python
-
-`````
+```
