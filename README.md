@@ -653,7 +653,8 @@ feature_importance_rf.head(10)
 
 
 ## Customer Churn Dashboard
-![An Image]()
+![An Image](https://github.com/Dataprofessional2/Customer_Churn_Project_DA/blob/main/Dashboard.png)
+
 
 
 
