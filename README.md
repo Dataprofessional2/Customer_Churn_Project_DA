@@ -665,11 +665,11 @@ Retained customers had an average tenure of 37.72 months, while churned customer
 The Random Forest model also identified tenure (16.6%) as the most important feature.
 - Contract Type Strongly Affects Retention
 Month-to-month customers had the highest churn rate (42.6%), compared to 11.3% for one-year contracts and 2.8% for two-year contracts.
-Payment Method Is Linked to Churn Risk
+- Payment Method Is Linked to Churn Risk
 Customers using electronic check had a churn rate of 45.1%, while bank transfer (16.7%) and credit card (15.3%) users had much lower churn rates.
-Technical Support Improves Retention
+- Technical Support Improves Retention
 Customers without technical support had a churn rate of 41.5%, compared to 15.2% for customers with support.
-Model Performance Is Reliable
+- Model Performance Is Reliable
 Logistic Regression and Random Forest achieved 76–77% accuracy, correctly predicting churn for about 3 out of 4 customers.
 
 
