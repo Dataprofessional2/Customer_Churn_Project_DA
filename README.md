@@ -657,8 +657,26 @@ feature_importance_rf.head(10)
 
 
 
+## Insights and Recommendations
+- Pricing Influences Churn
+Customers who churned had a higher average monthly charge (74.44) compared to retained customers (61.22), about 21.6% higher, indicating price sensitivity.
+- Customer Tenure Is the Most Important Predictor
+Retained customers had an average tenure of 37.72 months, while churned customers averaged only 18.09 months.
+The Random Forest model also identified tenure (16.6%) as the most important feature.
+- Contract Type Strongly Affects Retention
+Month-to-month customers had the highest churn rate (42.6%), compared to 11.3% for one-year contracts and 2.8% for two-year contracts.
+Payment Method Is Linked to Churn Risk
+Customers using electronic check had a churn rate of 45.1%, while bank transfer (16.7%) and credit card (15.3%) users had much lower churn rates.
+Technical Support Improves Retention
+Customers without technical support had a churn rate of 41.5%, compared to 15.2% for customers with support.
+Model Performance Is Reliable
+Logistic Regression and Random Forest achieved 76–77% accuracy, correctly predicting churn for about 3 out of 4 customers.
 
 
+
+
+## Conclusion
+Customer churn is primarily influenced by tenure, pricing, contract type, payment method, and service support, and implementing targeted retention strategies for high-risk customer segments can significantly improve customer retention and business performance.
 
 
 
