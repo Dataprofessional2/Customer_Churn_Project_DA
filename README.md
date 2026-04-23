@@ -319,21 +319,39 @@ plt.xticks(rotation=45)
 plt.show()
 ```
 ![An Image](https://github.com/Dataprofessional2/Customer_Churn_Project_DA/blob/main/pm_bar.png)
-```python
-
-```
-![An Image]()
-```python
-
-```
-![An Image]()
-```python
-
-```
 
 ```python
-
+# Churn count by internet service
+df1.groupby('InternetService')['Churn'].value_counts()
 ```
+![An Image](https://github.com/Dataprofessional2/Customer_Churn_Project_DA/blob/main/churn_is.png)
+```python
+sns.countplot(x='InternetService', hue='Churn', data=df1)
+
+plt.title('Churn by Internet Service')
+plt.xlabel('Internet Service Type')
+plt.ylabel('Number of Customers')
+
+plt.show()
+```
+![An Image](https://github.com/Dataprofessional2/Customer_Churn_Project_DA/blob/main/is_bar.png)
+
+```python
+df1.groupby('TechSupport')['Churn'].value_counts()
+```
+![An Image](https://github.com/Dataprofessional2/Customer_Churn_Project_DA/blob/main/ts_churn.png)
+
+```python
+sns.countplot(x='TechSupport', hue='Churn', data=df1)
+
+plt.title('Churn by Tech Support')
+plt.xlabel('Tech Support')
+plt.ylabel('Number of Customers')
+
+plt.show()
+```
+![An Image](https://github.com/Dataprofessional2/Customer_Churn_Project_DA/blob/main/ts_bar.png)
+
 ## Feature Engineering
 ```python
 #Feature Engineering
