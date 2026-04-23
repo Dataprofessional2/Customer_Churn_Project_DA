@@ -547,26 +547,74 @@ high_risk_customers.head()
 
 
 
+```python
+#Building Random Forest Model
+from sklearn.ensemble import RandomForestClassifier
+rf_model = RandomForestClassifier(
+    n_estimators=100,
+    random_state=42
+)
+rf_model.fit(
+    X_train_smote,
+    y_train_smote
+)
+#Make predictions
+y_pred_rf = rf_model.predict(X_test)
+y_prob_rf = rf_model.predict_proba(X_test)[:, 1]
+# Evaluate Model
+from sklearn.metrics import (
+    accuracy_score,
+    precision_score,
+    recall_score,
+    f1_score,
+    classification_report
+)
+
+print("Accuracy:", accuracy_score(y_test, y_pred_rf))
+print("Precision:", precision_score(y_test, y_pred_rf))
+print("Recall:", recall_score(y_test, y_pred_rf))
+print("F1 Score:", f1_score(y_test, y_pred_rf))
+print("\nClassification Report:\n")
+print(classification_report(y_test, y_pred_rf))
+```
+![An Image](https://github.com/Dataprofessional2/Customer_Churn_Project_DA/blob/main/build%20rf%20model.png)
+![An Image](https://github.com/Dataprofessional2/Customer_Churn_Project_DA/blob/main/Screenshot%202026-04-23%20145109.png)
 
 
 
 
 
+```python
+from sklearn.metrics import accuracy_score
 
+# Training accuracy
+train_pred = log_model.predict(X_train_smote)
 
+print("Train Accuracy:",
+      accuracy_score(y_train_smote, train_pred))
 
+# Test accuracy
+print("Test Accuracy:",
+      accuracy_score(y_test, y_pred))
+import pandas as pd
 
+feature_importance_rf = pd.DataFrame({
+    'Feature': X_train_smote.columns,
+    'Importance': rf_model.feature_importances_
+})
 
+feature_importance_rf = feature_importance_rf.sort_values(
+    by='Importance',
+    ascending=False
+)
 
-
-
-
-
-
+feature_importance_rf.head(10)
+```
+![An Image](https://github.com/Dataprofessional2/Customer_Churn_Project_DA/blob/main/perfomance_ondata.png)
+![An Image](https://github.com/Dataprofessional2/Customer_Churn_Project_DA/blob/main/feat_importance.png)
 ![An Image]()
 ![An Image]()
 ![An Image]()
-
 
 
 
