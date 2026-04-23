@@ -406,6 +406,8 @@ df_encoded['Churn'].value_counts()
 ```
 ![An Image](https://github.com/Dataprofessional2/Customer_Churn_Project_DA/blob/main/feature%20engineering.png)
 
+
+## Handling Class Imbalance
 ```python
 # Separate features and target
 X = df_encoded.drop('Churn', axis=1)
