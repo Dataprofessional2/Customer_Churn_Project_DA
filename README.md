@@ -20,12 +20,11 @@ This repository contains projects and case studies based on real-world business 
 - Feature Engineering
 - Modeling Approach
 - Baseline Logistic Regression
-- Advanced Models: Random Forest and XGBoost
+- Advanced Model: Random Forest
 - Model Evaluation
 - Performance Metrics: Accuracy, Precision, Recall, F1-Score, ROC-AUC
 - Insights and Recommendations
 - Customer Retention Strategies
-- Identifying High-Risk Customers
 - Conclusion
 
 ## Project Overview: Customer Churn Prediction
