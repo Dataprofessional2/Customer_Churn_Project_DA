@@ -499,6 +499,51 @@ plt.show()
 ![An Image](https://github.com/Dataprofessional2/Customer_Churn_Project_DA/blob/main/confusion_matrix_viz.png)
 
 
+```python
+#Tradeoff between TPR AND FPR
+from sklearn.metrics import roc_auc_score
+
+roc_auc = roc_auc_score(y_test, y_prob)
+
+print("ROC-AUC Score:", roc_auc)
+
+from sklearn.metrics import classification_report
+
+print(classification_report(y_test, y_pred))
+```
+![An Image](https://github.com/Dataprofessional2/Customer_Churn_Project_DA/blob/main/ROC.png)
+
+
+
+
+
+```python
+#Identifying High risk consumer
+# Create results table
+
+results = X_test.copy()
+
+results['Actual_Churn'] = y_test.values
+
+results['Churn_Probability'] = y_prob
+
+
+# Predict churn using threshold
+
+results['Predicted_Churn'] = (
+    results['Churn_Probability'] >= 0.5
+).astype(int)
+
+
+# Show customers likely to churn
+
+high_risk_customers = results[
+    results['Predicted_Churn'] == 1
+]
+
+high_risk_customers.head()
+```
+![An Image](https://github.com/Dataprofessional2/Customer_Churn_Project_DA/blob/main/high_risk_consumer.png)
 
 
 
@@ -518,12 +563,6 @@ plt.show()
 
 
 
-
-
-
-
-![An Image]()
-![An Image]()
 ![An Image]()
 ![An Image]()
 ![An Image]()
