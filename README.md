@@ -268,12 +268,21 @@ plt.show()
 ![An Image](https://github.com/Dataprofessional2/Customer_Churn_Project_DA/blob/main/bar_srcitizen_churn.png)
 
 ```python
-
+# Churn by tenure
+df1.groupby('Churn')['tenure'].describe()
 ```
+![An Image](https://github.com/Dataprofessional2/Customer_Churn_Project_DA/blob/main/tenure_churn.png)
 
 ```python
+# Churn by tenure boxplot
+sns.boxplot(x='Churn', y='tenure', data=df1)
+plt.title('Tenure Distribution by Churn')
+plt.xlabel('Churn')
+plt.ylabel('Tenure (Months)')
 
+plt.show()
 ```
+![An Image](https://github.com/Dataprofessional2/Customer_Churn_Project_DA/blob/main/tenure_boxplot.png)
 
 ```python
 
