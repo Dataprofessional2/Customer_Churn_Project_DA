@@ -546,7 +546,7 @@ high_risk_customers.head()
 ![An Image](https://github.com/Dataprofessional2/Customer_Churn_Project_DA/blob/main/high_risk_consumer.png)
 
 
-
+## Building Random Forest Model
 ```python
 #Building Random Forest Model
 from sklearn.ensemble import RandomForestClassifier
