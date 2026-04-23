@@ -405,6 +405,33 @@ df_encoded[num_cols] = scaler.fit_transform(
 df_encoded['Churn'].value_counts()
 ```
 ![An Image](https://github.com/Dataprofessional2/Customer_Churn_Project_DA/blob/main/feature%20engineering.png)
-```python
 
+```python
+# Separate features and target
+X = df_encoded.drop('Churn', axis=1)
+y = df_encoded['Churn']
+
+# Train-test split
+from sklearn.model_selection import train_test_split
+X_train, X_test, y_train, y_test = train_test_split(
+    X,
+    y,
+    test_size=0.2,
+    random_state=42,
+    stratify=y
+)
+
+# Apply SMOTE
+from imblearn.over_sampling import SMOTE
+smote = SMOTE(random_state=42)
+X_train_smote, y_train_smote = smote.fit_resample(
+    X_train,
+    y_train
+)
+
+
+# Check balance
+
+y_train_smote.value_counts()
 ```
+![An Image](https://github.com/Dataprofessional2/Customer_Churn_Project_DA/blob/main/class_imbalance.png)
