@@ -315,11 +315,96 @@ plt.show()
 ```python
 
 ```
-
+## Feature Engineering
 ```python
+#Feature Engineering
+# Make a copy to avoid modifying original data
+df_model = df1.copy()
 
+
+# Fix TotalCharges (common issue in Telco dataset)
+
+df_model['TotalCharges'] = pd.to_numeric(
+    df_model['TotalCharges'],
+    errors='coerce'
+)
+
+
+# Handle missing values
+
+df_model['TotalCharges'].fillna(
+    df_model['TotalCharges'].median(),
+    inplace=True
+)
+
+
+# Clean target variable
+
+df_model['Churn'] = df_model['Churn'].str.strip()
+
+df_model['Churn'] = df_model['Churn'].map({
+    'No': 0,
+    'Yes': 1
+})
+
+
+# Create tenure groups
+
+df_model['tenure_group'] = pd.cut(
+    df_model['tenure'],
+    bins=[0, 12, 24, 48, 72],
+    labels=[
+        '0-1 Year',
+        '1-2 Years',
+        '2-4 Years',
+        '4-6 Years'
+    ]
+)
+
+
+# Create MonthlyCharges group
+
+df_model['MonthlyCharges_group'] = pd.cut(
+    df_model['MonthlyCharges'],
+    bins=[0, 35, 70, 120],
+    labels=[
+        'Low',
+        'Medium',
+        'High'
+    ]
+)
+
+
+# One-hot encoding
+
+df_encoded = pd.get_dummies(
+    df_model,
+    drop_first=True
+)
+
+
+# Scale numeric variables
+
+from sklearn.preprocessing import StandardScaler
+
+scaler = StandardScaler()
+
+num_cols = [
+    'tenure',
+    'MonthlyCharges',
+    'TotalCharges'
+]
+
+df_encoded[num_cols] = scaler.fit_transform(
+    df_encoded[num_cols]
+)
+
+
+# Verify target
+
+df_encoded['Churn'].value_counts()
 ```
-
+![An Image](https://github.com/Dataprofessional2/Customer_Churn_Project_DA/blob/main/feature%20engineering.png)
 ```python
 
 ```
