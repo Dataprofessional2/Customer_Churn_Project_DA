@@ -249,6 +249,68 @@ plt.ylabel('Monthly Charges')
 plt.show()
 ```
 ![An Image](https://github.com/Dataprofessional2/Customer_Churn_Project_DA/blob/main/boxplot.png)
+
+```python
+# Churn count by Senior Citizen
+df1.groupby('SeniorCitizen')['Churn'].value_counts()
+```
+![An Image](https://github.com/Dataprofessional2/Customer_Churn_Project_DA/blob/main/churn_bysrcitizen.png)
+
+```python
+#Do senior citizen churn more?using plot
+sns.countplot(x='SeniorCitizen', hue='Churn', data=df1)
+plt.title('Churn by Senior Citizen Status')
+plt.xlabel('Senior Citizen (0 = No, 1 = Yes)')
+plt.ylabel('Number of Customers')
+
+plt.show()
+```
+![An Image](https://github.com/Dataprofessional2/Customer_Churn_Project_DA/blob/main/bar_srcitizen_churn.png)
+
+```python
+
+```
+
+```python
+
+```
+
+```python
+
+```
+
+```python
+
+```
+
+```python
+
+```
+
+```python
+
+```
+
+```python
+
+```
+
+```python
+
+```
+
+```python
+
+```
+
+```python
+
+```
+
+```python
+
+```
+
 ```python
 
 ```
