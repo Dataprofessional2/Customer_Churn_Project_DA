@@ -657,7 +657,7 @@ feature_importance_rf.head(10)
 
 
 
-## Insights and Recommendations
+## Insights
 - Pricing Influences Churn
 Customers who churned had a higher average monthly charge (74.44) compared to retained customers (61.22), about 21.6% higher, indicating price sensitivity.
 - Customer Tenure Is the Most Important Predictor
@@ -672,8 +672,17 @@ Customers without technical support had a churn rate of 41.5%, compared to 15.2%
 - Model Performance Is Reliable
 Logistic Regression and Random Forest achieved 76–77% accuracy, correctly predicting churn for about 3 out of 4 customers.
 
-
-
+## Recommendations
+- Target New Customers
+Focus on customers in their first 18 months, as they have the highest churn risk.
+- Encourage Long-Term Contracts
+Promote one-year and two-year contracts, which reduce churn from 42.6% to as low as 2.8%.
+- Promote Automatic Payment Methods
+Reduce reliance on electronic checks (45.1% churn) by encouraging auto-pay options.
+- Review Pricing Strategy
+Since churned customers pay about 21.6% more, offer discounts or bundled plans to improve retention.
+- Expand Technical Support
+Providing support can reduce churn from 41.5% to 15.2%, significantly improving customer retention.
 
 ## Conclusion
 Customer churn is primarily influenced by tenure, pricing, contract type, payment method, and service support, and implementing targeted retention strategies for high-risk customer segments can significantly improve customer retention and business performance.
