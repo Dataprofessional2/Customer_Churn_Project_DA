@@ -479,3 +479,66 @@ print("Recall:", recall_score(y_test, y_pred))
 print("F1 Score:", f1_score(y_test, y_pred))
 ```
 ![An Image](https://github.com/Dataprofessional2/Customer_Churn_Project_DA/blob/main/Log_regression.png)
+
+```python
+#Confusion Matrix
+from sklearn.metrics import confusion_matrix
+cm = confusion_matrix(y_test, y_pred)
+import seaborn as sns
+import matplotlib.pyplot as plt
+sns.heatmap(
+    cm,
+    annot=True,
+    fmt='d')
+plt.xlabel("Predicted")
+plt.ylabel("Actual")
+plt.title("Confusion Matrix")
+plt.show()
+```
+![An Image](https://github.com/Dataprofessional2/Customer_Churn_Project_DA/blob/main/confusion_matrix.png)
+![An Image](https://github.com/Dataprofessional2/Customer_Churn_Project_DA/blob/main/confusion_matrix_viz.png)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+![An Image]()
+![An Image]()
+![An Image]()
+![An Image]()
+![An Image]()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
