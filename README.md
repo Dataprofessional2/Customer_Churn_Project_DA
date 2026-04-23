@@ -284,29 +284,49 @@ plt.show()
 ![An Image](https://github.com/Dataprofessional2/Customer_Churn_Project_DA/blob/main/tenure_boxplot.png)
 
 ```python
-
+# Churn count by contract type
+df1.groupby('Contract')['Churn'].value_counts()
 ```
+![An Image](https://github.com/Dataprofessional2/Customer_Churn_Project_DA/blob/main/ct_churn.png)
+```python
+# Churn count by contract type
+sns.countplot(x='Contract', hue='Churn', data=df1)
 
+plt.title('Churn by Contract Type')
+plt.xlabel('Contract Type')
+plt.ylabel('Number of Customers')
+
+plt.show()
+```
+![An Image](https://github.com/Dataprofessional2/Customer_Churn_Project_DA/blob/main/ct_bar.png)
+
+
+```python
+# Churn count by payment method
+df1.groupby('PaymentMethod')['Churn'].value_counts()
+```
+![An Image](https://github.com/Dataprofessional2/Customer_Churn_Project_DA/blob/main/pm_churn.png)
+
+```python
+sns.countplot(x='PaymentMethod', hue='Churn', data=df1)
+
+plt.title('Churn by Payment Method')
+plt.xlabel('Payment Method')
+plt.ylabel('Number of Customers')
+
+plt.xticks(rotation=45)
+
+plt.show()
+```
+![An Image](https://github.com/Dataprofessional2/Customer_Churn_Project_DA/blob/main/pm_bar.png)
 ```python
 
 ```
-
+![An Image]()
 ```python
 
 ```
-
-```python
-
-```
-
-```python
-
-```
-
-```python
-
-```
-
+![An Image]()
 ```python
 
 ```
@@ -611,9 +631,7 @@ feature_importance_rf.head(10)
 ```
 ![An Image](https://github.com/Dataprofessional2/Customer_Churn_Project_DA/blob/main/perfomance_ondata.png)
 ![An Image](https://github.com/Dataprofessional2/Customer_Churn_Project_DA/blob/main/feat_importance.png)
-![An Image]()
-![An Image]()
-![An Image]()
+
 
 
 
