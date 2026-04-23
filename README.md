@@ -437,3 +437,45 @@ X_train_smote, y_train_smote = smote.fit_resample(
 y_train_smote.value_counts()
 ```
 ![An Image](https://github.com/Dataprofessional2/Customer_Churn_Project_DA/blob/main/class_imbalance.png)
+
+
+
+```python
+#Building BaseLine Logistic Regression
+from sklearn.linear_model import LogisticRegression
+
+# Create model
+log_model = LogisticRegression(max_iter=1000)
+
+# Train model
+log_model.fit(
+    X_train_smote,
+    y_train_smote
+)
+
+# Predict on test data
+
+y_pred = log_model.predict(X_test)
+
+# Predict probabilities (needed for ROC-AUC)
+
+y_prob = log_model.predict_proba(X_test)[:, 1]
+```
+
+![An Image](https://github.com/Dataprofessional2/Customer_Churn_Project_DA/blob/main/baseline%20logistic%20regression.png)
+
+```python
+#Logistic Regression Evaluation
+from sklearn.metrics import (
+    accuracy_score,
+    precision_score,
+    recall_score,
+    f1_score
+)
+
+print("Accuracy:", accuracy_score(y_test, y_pred))
+print("Precision:", precision_score(y_test, y_pred))
+print("Recall:", recall_score(y_test, y_pred))
+print("F1 Score:", f1_score(y_test, y_pred))
+```
+![An Image](https://github.com/Dataprofessional2/Customer_Churn_Project_DA/blob/main/Log_regression.png)
